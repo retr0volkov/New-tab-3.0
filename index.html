@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New tab 3</title>
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body class="overflow-hidden">
+    <!--<img src="./images/background.gif" class="absolute top-0 w-screen h-screen transition-all object-cover">-->
+    <video src="./images/0.9d.mp4" class="absolute top-0 w-screen h-screen transition-all object-cover" autoplay="true" loop></video>
+    <div id="clock" class="glassy font-mono select-none transition-all
+        absolute left-1/2 -translate-x-1/2 h-auto w-min mt-[15vh] p-3 opacity-100">
+        <p class="text-9xl text-center">00:00:00</p>
+        <span class="text-2xl ml-2">1.1</span>
+        <span class="text-2xl mr-2 float-right">09.07.23</span>
+    </div>
+    <div id="taskbar" class="glassy select-none transition-all
+        absolute bottom-3 left-1/2 -translate-x-1/2 h-auto w-auto p-3 opacity-100 flex">
+    </div>
+    <div id="pinned" class="glassy select-none transition-all duration-200
+        absolute left-1/2 -translate-x-1/2 h-auto w-max mt-[60vh] p-3 opacity-100 grid-cols-6 grid-flow-row grid">
+    </div>
+    <div id="trains" class="glassy select-none transition-all duration-200
+            absolute left-1/2 -translate-x-1/2 h-auto w-max mt-[50vh] p-3 opacity-100 grid-cols-6 grid-flow-row grid mt-[100vh]">
+            trains
+    </div>
+    <div id="weather" class="glassy select-none transition-all duration-200
+            absolute left-1/2 -translate-x-1/2 h-auto w-max mt-[60vh] p-3 grid-cols-6 grid-flow-row grid mt-[100vh]">
+            weather
+    </div>
+    <div id="gkeep" class="glassy select-none transition-all duration-200
+            absolute left-1/2 -translate-x-1/2 h-96 w-96 mt-[50vh] p-3 opacity-100 mt-[100vh]">
+            gkeep
+    </div>
+    <aside id="left_panel" class="absolute left-3 top-3 w-80 h-[calc(100vh-24px)] p-2 glassy select-none transition-all noscrollbar overflow-auto opacity-100">
+    </aside>
+    <aside id="perf_monitor" class="absolute right-3 top-3 w-80 h-auto p-2 glassy select-none transition-all font-mono opacity-100">
+    </aside>
+    <label class="absolute bottom-1 right-1 text-white">v0.6.2</label>
+</body>
+<script src="./scripts/clock.js"></script>
+<script src="./scripts/topsites.js"></script>
+<script src="./scripts/bookmarks.js"></script>
+<script src="./scripts/perfomance_mon.js"></script>
+<script src="./scripts/idle.js"></script>
+<script src="./scripts/pinned.js"></script>
+<script src="./scripts/taskbar.js"></script>
+</html>

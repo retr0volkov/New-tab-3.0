@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --color-primary-50: theme('colors.sky.50');
+        --color-primary-100: theme('colors.sky.100');
+        --color-primary-200: theme('colors.sky.200');
+        --color-primary-300: theme('colors.sky.300');
+        --color-primary-400: theme('colors.sky.400');
+        --color-primary-500: theme('colors.sky.500');
+        --color-primary-600: theme('colors.sky.600');
+        --color-primary-700: theme('colors.sky.700');
+        --color-primary-800: theme('colors.sky.800');
+        --color-primary-900: theme('colors.sky.900');
+        --color-primary-950: theme('colors.sky.950');
+    }
+}
+
+.theme-red
+{
+    --color-primary-50: theme('colors.red.50');
+    --color-primary-100: theme('colors.red.100');
+    --color-primary-200: theme('colors.red.200');
+    --color-primary-300: theme('colors.red.300');
+    --color-primary-400: theme('colors.red.400');
+    --color-primary-500: theme('colors.red.500');
+    --color-primary-600: theme('colors.red.600');
+    --color-primary-700: theme('colors.red.700');
+    --color-primary-800: theme('colors.red.800');
+    --color-primary-900: theme('colors.red.900');
+    --color-primary-950: theme('colors.red.950');
+}
+
+.theme-green
+{
+    --color-primary-50: theme('colors.green.50');
+    --color-primary-100: theme('colors.green.100');
+    --color-primary-200: theme('colors.green.200');
+    --color-primary-300: theme('colors.green.300');
+    --color-primary-400: theme('colors.green.400');
+    --color-primary-500: theme('colors.green.500');
+    --color-primary-600: theme('colors.green.600');
+    --color-primary-700: theme('colors.green.700');
+    --color-primary-800: theme('colors.green.800');
+    --color-primary-900: theme('colors.green.900');
+    --color-primary-950: theme('colors.green.950');
+}
+
+.glassy
+{
+    @apply rounded-lg border
+    bg-noise bg-contain bg-center
+    backdrop-blur-xl
+    dark:bg-neutral-900/80 bg-neutral-50/80
+    dark:border-neutral-700 border-neutral-400
+    dark:text-neutral-300 text-black
+    shadow-lg
+}
+
+.link
+{
+    @apply rounded
+    hover:backdrop-brightness-[1.75] active:backdrop-brightness-150
+    bg-transparent
+    dark:text-neutral-300 text-black
+}
+
+.button_action
+{
+
+}
+
+.noscrollbar
+{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.noscrollbar::-webkit-scrollbar
+{
+    display: none;
+}
+
+.transparent
+{
+    @apply opacity-20
+}
+
+.text-2xs
+{
+    font-size: 10px;
+    line-height: 12px;
+}

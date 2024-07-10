@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "New tab 3",
+    "version": "0.6.2",
+    "permissions": [
+        "bookmarks",
+        "storage",
+        "topSites",
+        "favicon",
+        "system.storage",
+        "system.cpu",
+        "system.memory",
+        "idle"
+    ],
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "_favicon/*"
+            ],
+            "matches": [
+                "<all_urls>"
+            ],
+            "extension_ids": [
+                "*"
+            ]
+        }
+    ]
+}
